@@ -1,0 +1,29 @@
+.navbar {
+  background-color: #2CCB44 !important;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.logo {
+  width: 50px;
+}
+
+.nav-item:hover {
+  background-color: forestgreen;
+}
+
+#spenden {
+  background-color: orange!important;
+}
+#spenden:hover {
+  background-color: darkorange!important;
+}

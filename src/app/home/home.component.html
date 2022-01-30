@@ -1,0 +1,37 @@
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <span class="centered">
+    <h1 id="title">Bachué</h1>
+    <h3 id="subtitle">Der Verein für Mutter und Kind</h3>
+  </span>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/sample_pictur3.jpg" class="d-block w-100 carouselImage" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/sample_picture1.jpg" class="d-block w-100 carouselImage" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/sample_picture2.jpg" class="d-block w-100 carouselImage" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="underCarousel">
+  <div class = "dropCap">
+    <p>Mit einem Gedanken fing alles an. Seit längerer Zeit haben wir uns Gedanken darüber gemacht, einen Verein zu gründen, der Frauen, Mütter und ihre Kinder unterstützt.
+      Jetzt ist es endlich soweit!
+      Frauen werden sowohl in der Schweiz wie auch in Südamerika in vielen Bereichen benachteiligt, bevormundet oder erleben Formen von sexualisierter Gewalt. Das Ziel des Vereins ist es, die Rolle von (vor allem minderjährigen) Frauen und Müttern zu stärken und sie zu unterstützen.
+      Um dieses Ziel zu erreichen, wollen wir alleinstehenden Müttern in der Schweiz, welche vom Sozialamt abhängig sind, finanziell unter die Arme greifen. Das Geld soll in diesen Bereichen eingesetzt werden, die das Sozialamt nicht übernehmen kann zum Beispiel Ausbildungsbeiträge.
+      Parallel dazu widmen wir uns zwei ausgewählten Projekten in Kolumbien und Peru, welche sich alle für dasselbe Ziel einsetzen: Kinder, (minderjährige) Mütter und Frauen in schwierigen Zeiten ihres Lebens stärken.</p>
+  </div>
+  <hr>
+  <app-short-project *ngFor="let project of projects" [project]="project"></app-short-project>
+</div>
+

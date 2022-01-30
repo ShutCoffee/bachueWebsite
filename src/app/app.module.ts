@@ -1,14 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarComponent } from './navbar/navbar.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ShortNewsComponent } from './short-news/short-news.component';
+import { ShortProjectComponent } from './short-project/short-project.component';
+import { FooterComponent } from './footer/footer.component';
+import { MitgliedschaftComponent } from './mitgliedschaft/mitgliedschaft.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    NavbarComponent,
+    ShortNewsComponent,
+    ShortProjectComponent,
+    FooterComponent,
+    MitgliedschaftComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
