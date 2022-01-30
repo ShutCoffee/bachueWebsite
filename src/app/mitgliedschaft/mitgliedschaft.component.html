@@ -1,1 +1,69 @@
-
+<div class="mitgWrapper">
+  <form class="row g-3">
+    <div class="col-md-6">
+      <label for="inputVorname" class="form-label">Vorname</label>
+      <input class="form-control" id="inputVorname">
+    </div>
+    <div class="col-md-6">
+      <label for="inputNachname" class="form-label">Nachname</label>
+      <input type="password" class="form-control" id="inputNachname">
+    </div>
+    <div class="col-12">
+      <label for="inputEmail4" class="form-label">E-Mail</label>
+      <input type="text" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Adresse</label>
+      <input type="text" class="form-control" id="inputAddress">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">Stadt</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-6">
+      <label for="inputZip" class="form-label">Postleitzahl</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-md-6">
+      <label for="inputBetrag" class="form-label">Jährlicher Betrag</label>
+      <div class="input-group mb-3">
+        <span class="input-group-text">CHF</span>
+        <input (input)="checkContribution()" name="contribution" type="number" class="form-control {{validation}}" id="inputBetrag" [(ngModel)]="mitgliedschaft.yearlyContribution">
+        <div class="invalid-feedback">
+          {{alert}}
+        </div>
+      </div>
+    </div>
+      <div class="col-md-6">
+        <div class="form-check">
+          <input [(ngModel)]="mitgliedschaft.memberKind" (change)="checkContribution()" class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="active" checked>
+          <label class="form-check-label" for="gridRadios1">
+            Aktivmitglied
+          </label>
+        </div>
+        <div class="form-check">
+          <input [(ngModel)]="mitgliedschaft.memberKind" (change)="checkContribution()" class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="passive">
+          <label class="form-check-label" for="gridRadios2">
+            Passivmitglied
+          </label>
+        </div>
+        <div class="form-check">
+          <input [(ngModel)]="mitgliedschaft.memberKind" (change)="checkContribution()" class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="gönner" >
+          <label class="form-check-label" for="gridRadios3">
+            Gönner*in
+          </label>
+        </div>
+      </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Newsletter erhalten
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn">Absenden</button>
+    </div>
+  </form>
+</div>

@@ -11,6 +11,9 @@ import { ShortNewsComponent } from './short-news/short-news.component';
 import { ShortProjectComponent } from './short-project/short-project.component';
 import { FooterComponent } from './footer/footer.component';
 import { MitgliedschaftComponent } from './mitgliedschaft/mitgliedschaft.component';
+import { FormsModule } from "@angular/forms";
+import { CommonModule } from "@angular/common";
+import { ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { MitgliedschaftComponent } from './mitgliedschaft/mitgliedschaft.compone
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    CommonModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
