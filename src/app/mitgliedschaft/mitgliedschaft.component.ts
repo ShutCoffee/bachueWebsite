@@ -45,5 +45,9 @@ export class MitgliedschaftComponent implements OnInit {
         this.validation = ""
       }
     }
+    if(this.mitgliedschaft.memberKind == "spende") {
+        this.alert = "";
+        this.validation = ""
+    }
   }
 }

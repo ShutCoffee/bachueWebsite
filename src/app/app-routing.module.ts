@@ -5,7 +5,7 @@ import { MitgliedschaftComponent } from "./mitgliedschaft/mitgliedschaft.compone
 
 const routes: Routes = [
   { path:'', component: HomeComponent},
-  { path: 'mitgliedschaft', component: MitgliedschaftComponent}
+  { path: 'unterstützen', component: MitgliedschaftComponent}
 ];
 
 @NgModule({

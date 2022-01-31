@@ -1,6 +1,6 @@
 <div class="Wrapper">
   <!-- Mitgliedschafts Optionen -->
-    <h1>Mitgliedschaft</h1>
+    <h1>Unterstützen</h1>
     <hr>
     <div class="row">
       <h3>Aktiv- und Passivmitgliedschaft</h3>
@@ -31,7 +31,7 @@
     </div>
     <hr>
     <!-- Forum -->
-    <p>Wenn du ein Mitglied werden willst, fülle bitte das untenstehende Formular aus.</p>
+    <p>Wenn du ein Mitglied werden willst, oder einen einmaligen Betrag spenden möchtest, fülle bitte das untenstehende Formular aus.</p>
     <form class="row g-3">
       <div class="col-md-6">
         <label for="inputVorname" class="form-label">Vorname</label>
@@ -58,7 +58,7 @@
         <input type="text" class="form-control" id="inputZip">
       </div>
       <div class="col-md-6">
-        <label for="inputBetrag" class="form-label">Jährlicher Betrag</label>
+        <label for="inputBetrag" class="form-label">Betrag</label>
         <div class="input-group mb-3">
           <span class="input-group-text">CHF</span>
           <input (input)="checkContribution()" name="contribution" type="number" class="form-control {{validation}}" id="inputBetrag" [(ngModel)]="mitgliedschaft.yearlyContribution">
@@ -86,6 +86,12 @@
               Gönner*in
             </label>
           </div>
+          <div class="form-check">
+            <input [(ngModel)]="mitgliedschaft.memberKind" (change)="checkContribution()" class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="spende">
+            <label class="form-check-label" for="gridRadios4">
+              einmalige Spende
+            </label>
+          </div>
         </div>
       <div class="col-12">
         <div class="form-check">
@@ -96,7 +102,7 @@
         </div>
       </div>
       <div class="col-12">
-        <button type="submit" class="btn">Absenden</button>
+        <button type="submit" class="btn">Zur Bezahlung</button>
       </div>
     </form>
 </div>

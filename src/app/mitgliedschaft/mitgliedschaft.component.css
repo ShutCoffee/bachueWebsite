@@ -33,4 +33,6 @@ fieldset {
   display: block;
   text-align: justify;
 }
-
+.banner {
+  width: 100%;
+}
