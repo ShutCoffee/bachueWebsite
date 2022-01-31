@@ -1,6 +1,11 @@
-form {
+.Wrapper {
   width: 70%;
   margin: 1rem auto;
+}
+form {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 30px;
 }
 fieldset {
   margin-top: 10px;
@@ -8,5 +13,24 @@ fieldset {
 .newsletter {
   margin-top: 10px;
 }
-
+@media only screen and (max-width: 600px) {
+  .Wrapper {
+    width: 90%;
+  }
+}
+.illuWrapper {
+  position: relative;
+}
+.mitglieder .gönner .spende {
+  position: absolute;
+}
+.illustration {
+  width: 135px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.description {
+  display: block;
+  text-align: justify;
+}
 

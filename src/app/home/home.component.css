@@ -48,13 +48,3 @@
   transition: all 0.3s;
 }
 
-.dropCap p:first-child::first-letter{
-  color:#2CCB44;
-  font-weight: bold;
-  font-size: 70px;
-  float: left;
-  line-height: 70px;
-  padding-right: 8px;
-  margin-top: -3px;
-}
-

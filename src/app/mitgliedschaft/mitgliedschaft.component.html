@@ -1,69 +1,102 @@
-<div class="mitgWrapper">
-  <form class="row g-3">
-    <div class="col-md-6">
-      <label for="inputVorname" class="form-label">Vorname</label>
-      <input class="form-control" id="inputVorname">
-    </div>
-    <div class="col-md-6">
-      <label for="inputNachname" class="form-label">Nachname</label>
-      <input type="password" class="form-control" id="inputNachname">
-    </div>
-    <div class="col-12">
-      <label for="inputEmail4" class="form-label">E-Mail</label>
-      <input type="text" class="form-control" id="inputEmail4">
-    </div>
-    <div class="col-12">
-      <label for="inputAddress" class="form-label">Adresse</label>
-      <input type="text" class="form-control" id="inputAddress">
-    </div>
-    <div class="col-md-6">
-      <label for="inputCity" class="form-label">Stadt</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="col-md-6">
-      <label for="inputZip" class="form-label">Postleitzahl</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-    <div class="col-md-6">
-      <label for="inputBetrag" class="form-label">Jährlicher Betrag</label>
-      <div class="input-group mb-3">
-        <span class="input-group-text">CHF</span>
-        <input (input)="checkContribution()" name="contribution" type="number" class="form-control {{validation}}" id="inputBetrag" [(ngModel)]="mitgliedschaft.yearlyContribution">
-        <div class="invalid-feedback">
-          {{alert}}
-        </div>
+<div class="Wrapper">
+  <!-- Mitgliedschafts Optionen -->
+    <h1>Mitgliedschaft</h1>
+    <hr>
+    <div class="row">
+      <h3>Aktiv- und Passivmitgliedschaft</h3>
+      <div class="col-xxl-auto">
+        <img class="illustration" src="assets/members.png">
+      </div>
+      <div class="col-xxl-10">
+        <p class="description">Die Mitglieder erhalten halbjährlich einen Newsletter. Die Mitgliedschaft ist unterteilt in Aktiv- und Passivmitglieder. Aktivmitglieder unterstützen den Verein mit einem festgelegten Jahresbeitrag von 50 CHF. Sie erhalten an den Vereinsversammlungen ein Stimmrecht. Die Passivmitglieder unterstützen den Verein mit einem tieferen Jahresbeitrag von 30 CHF und erhalten kein Stimmrecht.</p>
       </div>
     </div>
+    <div class="row">
+        <h3>Gönner*in</h3>
+        <div class="col-xxl-auto">
+          <img class="illustration" src="assets/gönner.png">
+        </div>
+        <div class="col-xxl-10">
+          <p class="description">Ab einer jährlichen Spende von 500 CHF werden Sie beim Verein als Gönner*in aufgelistet. Die Gönner*innen erhalten kein Stimmrecht, jedoch halbjährlich einen Newsletter.</p>
+        </div>
+    </div>
+    <div class="row">
+      <h3>Spende</h3>
+      <div class="col-xxl-auto">
+        <img class="illustration" src="assets/spende.png">
+      </div>
+      <div class="col-xxl-10">
+        <p class="description">Der Verein Bachué finanziert sich durch Mitgliederbeiträge, durch Beiträge von unseren Gönner*innen und durch Spenden, Schenkungen und Vermächtnisse. Wir freuen uns über jede noch so kleine Spende!</p>
+      </div>
+    </div>
+    <hr>
+    <!-- Forum -->
+    <p>Wenn du ein Mitglied werden willst, fülle bitte das untenstehende Formular aus.</p>
+    <form class="row g-3">
       <div class="col-md-6">
-        <div class="form-check">
-          <input [(ngModel)]="mitgliedschaft.memberKind" (change)="checkContribution()" class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="active" checked>
-          <label class="form-check-label" for="gridRadios1">
-            Aktivmitglied
-          </label>
+        <label for="inputVorname" class="form-label">Vorname</label>
+        <input class="form-control" id="inputVorname">
+      </div>
+      <div class="col-md-6">
+        <label for="inputNachname" class="form-label">Nachname</label>
+        <input type="password" class="form-control" id="inputNachname">
+      </div>
+      <div class="col-12">
+        <label for="inputEmail4" class="form-label">E-Mail</label>
+        <input type="text" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Adresse</label>
+        <input type="text" class="form-control" id="inputAddress">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Stadt</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="col-md-6">
+        <label for="inputZip" class="form-label">Postleitzahl</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+      <div class="col-md-6">
+        <label for="inputBetrag" class="form-label">Jährlicher Betrag</label>
+        <div class="input-group mb-3">
+          <span class="input-group-text">CHF</span>
+          <input (input)="checkContribution()" name="contribution" type="number" class="form-control {{validation}}" id="inputBetrag" [(ngModel)]="mitgliedschaft.yearlyContribution">
+          <div class="invalid-feedback">
+            {{alert}}
+          </div>
         </div>
-        <div class="form-check">
-          <input [(ngModel)]="mitgliedschaft.memberKind" (change)="checkContribution()" class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="passive">
-          <label class="form-check-label" for="gridRadios2">
-            Passivmitglied
-          </label>
+      </div>
+        <div class="col-md-6">
+          <div class="form-check">
+            <input [(ngModel)]="mitgliedschaft.memberKind" (change)="checkContribution()" class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="active" checked>
+            <label class="form-check-label" for="gridRadios1">
+              Aktivmitglied
+            </label>
+          </div>
+          <div class="form-check">
+            <input [(ngModel)]="mitgliedschaft.memberKind" (change)="checkContribution()" class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="passive">
+            <label class="form-check-label" for="gridRadios2">
+              Passivmitglied
+            </label>
+          </div>
+          <div class="form-check">
+            <input [(ngModel)]="mitgliedschaft.memberKind" (change)="checkContribution()" class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="gönner" >
+            <label class="form-check-label" for="gridRadios3">
+              Gönner*in
+            </label>
+          </div>
         </div>
+      <div class="col-12">
         <div class="form-check">
-          <input [(ngModel)]="mitgliedschaft.memberKind" (change)="checkContribution()" class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="gönner" >
-          <label class="form-check-label" for="gridRadios3">
-            Gönner*in
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Newsletter erhalten
           </label>
         </div>
       </div>
-    <div class="col-12">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-          Newsletter erhalten
-        </label>
+      <div class="col-12">
+        <button type="submit" class="btn">Absenden</button>
       </div>
-    </div>
-    <div class="col-12">
-      <button type="submit" class="btn">Absenden</button>
-    </div>
-  </form>
+    </form>
 </div>
