@@ -21,4 +21,8 @@ export class ProjectsService {
   public getProjects(): Project[] {
     return this.projects;
   }
+
+  public findProject(title: string): Project | undefined {
+      return this.projects.find(project => project.title.includes(title));
+  }
 }
