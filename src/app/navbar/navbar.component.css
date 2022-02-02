@@ -4,9 +4,21 @@
   font-size: 15px;
   font-weight: bold;
 }
+@media only screen and (max-width: 600px) {
+  .nav-item:hover {
+    background-color: #2CCB44 !important;
+  }
+  .dropdown-menu {
+    background-color: #2CCB44;
+  }
+  .dropdown-item {
+    color: white;
+  }
+}
 
 .nav-item {
   margin-left: 10px;
+  border-radius: 5px;
 }
 
 .nav-link {
@@ -26,4 +38,7 @@
 }
 #spenden:hover {
   background-color: darkorange!important;
+}
+.dropdown-item {
+  font-family: "Segoe UI";
 }

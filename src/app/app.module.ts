@@ -14,6 +14,7 @@ import { MitgliedschaftComponent } from './mitgliedschaft/mitgliedschaft.compone
 import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { ReactiveFormsModule} from "@angular/forms";
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ReactiveFormsModule} from "@angular/forms";
     ShortNewsComponent,
     ShortProjectComponent,
     FooterComponent,
-    MitgliedschaftComponent
+    MitgliedschaftComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,

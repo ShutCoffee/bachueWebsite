@@ -19,8 +19,8 @@ export class MitgliedschaftComponent implements OnInit {
 
   checkContribution() {
     if(this.mitgliedschaft.memberKind == "active") {
-      if(this.mitgliedschaft.yearlyContribution < 30) {
-        this.alert = "Der Mindestbetrag ist 30.- pro Jahr."
+      if(this.mitgliedschaft.yearlyContribution < 50) {
+        this.alert = "Der Mindestbetrag ist 50.- pro Jahr."
         this.validation = "is-invalid"
       } else {
         this.alert = "";
@@ -28,8 +28,8 @@ export class MitgliedschaftComponent implements OnInit {
       }
     }
     if(this.mitgliedschaft.memberKind == "passive") {
-      if(this.mitgliedschaft.yearlyContribution < 50) {
-        this.alert = "Der Mindestbetrag ist 50.- pro Jahr."
+      if(this.mitgliedschaft.yearlyContribution < 30) {
+        this.alert = "Der Mindestbetrag ist 30.- pro Jahr."
         this.validation = "is-invalid"
       } else {
         this.alert = "";
