@@ -1,6 +1,9 @@
 .Wrapper {
-  width: 70%;
+  width: 80%;
   margin: 1rem auto;
+  padding: 2rem;
+  text-align: justify;
+  transition: all 0.3s;
 }
 form {
   width: 100%;
@@ -29,3 +32,4 @@ fieldset {
 .banner {
   width: 100%;
 }
+

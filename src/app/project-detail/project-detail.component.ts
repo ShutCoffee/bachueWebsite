@@ -10,7 +10,7 @@ import { ProjectsService } from "../services/projects.service";
 })
 export class ProjectDetailComponent implements OnInit {
   public name: string = "";
-  public project: Project = new Project("","","","")
+  public project: Project = new Project("","","","", "")
 
   constructor(
     private route: ActivatedRoute,

@@ -9,7 +9,7 @@ import {Project} from "../models/project.model";
 })
 export class ShortProjectComponent implements OnInit {
 
-  @Input() project: Project = new Project('','','', '');
+  @Input() project: Project = new Project('','','', '', '');
 
   constructor() { }
 

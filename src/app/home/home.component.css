@@ -44,7 +44,10 @@
   width: 80%;
   margin: 1rem auto;
   padding: 2rem;
-  text-align: justify;
   transition: all 0.3s;
+}
+
+.underCarousel p {
+  text-align: justify;
 }
 

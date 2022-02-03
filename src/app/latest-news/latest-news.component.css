@@ -1,0 +1,28 @@
+img {
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+}
+.datum {
+  text-decoration-line: underline;
+}
+h5, .datum {
+  color: grey;
+}
+@media screen and (max-width: 1000px) {
+  .col-6 {
+    width: 100% !important;
+  }
+  img {
+    height: auto;
+    margin-bottom: 15px;
+  }
+}
+.Wrapper {
+  background-color: #EAEAEA;
+  border-radius: 5px;
+  padding: 10px;
+}
+p {
+  text-align: justify;
+}

@@ -23,6 +23,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
 <div class="underCarousel">
   <div class = "dropCap">
     <p>Mit einem Gedanken fing alles an. Seit längerer Zeit haben wir uns Gedanken darüber gemacht, einen Verein zu gründen, der Frauen, Mütter und ihre Kinder unterstützt.
@@ -31,6 +32,8 @@
       Um dieses Ziel zu erreichen, wollen wir alleinstehenden Müttern in der Schweiz, welche vom Sozialamt abhängig sind, finanziell unter die Arme greifen. Das Geld soll in diesen Bereichen eingesetzt werden, die das Sozialamt nicht übernehmen kann zum Beispiel Ausbildungsbeiträge.
       Parallel dazu widmen wir uns zwei ausgewählten Projekten in Kolumbien und Peru, welche sich alle für dasselbe Ziel einsetzen: Kinder, (minderjährige) Mütter und Frauen in schwierigen Zeiten ihres Lebens stärken.</p>
   </div>
+  <hr>
+  <app-latest-news></app-latest-news>
   <hr>
   <app-short-project *ngFor="let project of projects" [project]="project"></app-short-project>
 </div>

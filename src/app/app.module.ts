@@ -15,6 +15,7 @@ import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { ReactiveFormsModule} from "@angular/forms";
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { LatestNewsComponent } from './latest-news/latest-news.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
     ShortProjectComponent,
     FooterComponent,
     MitgliedschaftComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
+    LatestNewsComponent
   ],
   imports: [
     BrowserModule,
