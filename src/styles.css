@@ -19,7 +19,9 @@ p {
   background-color: #2CCB44!important;
   color: white!important;
   font-weight: bold!important;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
 }
+
 .btn:hover {
   background-color: forestgreen !important;
 }
@@ -32,3 +34,12 @@ p {
   padding-right: 8px;
   margin-top: -3px;
 }
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+ 
+@import '~mdb-angular-ui-kit/assets/scss/mdb.scss';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

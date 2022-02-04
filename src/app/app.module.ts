@@ -22,6 +22,7 @@ import { ChooseMembershipComponent } from './choose-membership/choose-membership
 import { AddressFormComponent } from './address-form/address-form.component';
 import { PaymentFormComponent } from './payment-form/payment-form.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
+import {MatTabsModule} from "@angular/material/tabs";
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
     NgbModule,
     FormsModule,
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,35 @@
+mat-tab-group {
+  width: 80%;
+  margin: auto;
+}
+
+form {
+  width: 100%;
+  margin: auto auto 30px;
+  background-color: whitesmoke;
+  padding: 15px;
+  border-radius: 5px;
+}
+fieldset {
+  margin-top: 10px;
+}
+.newsletter {
+  margin-top: 10px;
+}
+.illustration {
+  width: 135px;
+  display: block;
+  margin: 5px auto 20px;
+}
+.description {
+  display: block;
+  text-align: justify;
+}
+@media only screen and (max-width:600px) {
+  mat-tab-group {
+    width: 100%;
+  }
+}
+.fa-cc-visa, .fa-cc-mastercard {
+  margin: 5px;
+}
