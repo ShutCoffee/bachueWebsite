@@ -16,6 +16,7 @@ import { CommonModule } from "@angular/common";
 import { ReactiveFormsModule} from "@angular/forms";
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { LatestNewsComponent } from './latest-news/latest-news.component';
+import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { LatestNewsComponent } from './latest-news/latest-news.component';
     FooterComponent,
     MitgliedschaftComponent,
     ProjectDetailComponent,
-    LatestNewsComponent
+    LatestNewsComponent,
+    UeberUnsComponent
   ],
   imports: [
     BrowserModule,
