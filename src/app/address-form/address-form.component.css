@@ -8,12 +8,6 @@ fieldset {
 .newsletter {
   margin-top: 10px;
 }
-@media only screen and (max-width: 600px) {
-  .Wrapper {
-    width: 95%!important;
-    padding: 1rem!important;
-  }
-}
 .illustration {
   width: 135px;
   display: block;

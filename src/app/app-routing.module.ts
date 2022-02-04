@@ -16,7 +16,7 @@ const routes: Routes = [
     { path: 'mitgliedschaft', component: ChooseMembershipComponent},
     { path: 'adresse', component: AddressFormComponent},
     { path: 'bezahlung', component: PaymentFormComponent},
-    { path: 'bestätigung', component: ConfirmationComponent}
+    { path: 'bestaetigung', component: ConfirmationComponent}
   ]},
   { path: 'project/:name', component: ProjectDetailComponent},
   { path: 'über-uns', component: UeberUnsComponent}

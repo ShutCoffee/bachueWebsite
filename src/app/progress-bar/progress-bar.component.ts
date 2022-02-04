@@ -37,11 +37,11 @@ export class ProgressBarComponent implements OnInit {
       this.statusAdresse = "completed";
       this.statusBezahlung = "active";
       this.statusBestaetigung = "";
-    } else if (this.currentStep === "bestätigung") {
+    } else if (this.currentStep === "bestaetigung") {
       this.statusMitgliedschaft = "completed";
       this.statusAdresse = "completed";
       this.statusBezahlung = "completed";
-      this.statusBestaetigung = "active";
+      this.statusBestaetigung = "completed";
     }
   }
 
