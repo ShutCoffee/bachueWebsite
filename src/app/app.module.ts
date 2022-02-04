@@ -17,6 +17,11 @@ import { ReactiveFormsModule} from "@angular/forms";
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { LatestNewsComponent } from './latest-news/latest-news.component';
 import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { ChooseMembershipComponent } from './choose-membership/choose-membership.component';
+import { AddressFormComponent } from './address-form/address-form.component';
+import { PaymentFormComponent } from './payment-form/payment-form.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +34,12 @@ import { UeberUnsComponent } from './ueber-uns/ueber-uns.component';
     MitgliedschaftComponent,
     ProjectDetailComponent,
     LatestNewsComponent,
-    UeberUnsComponent
+    UeberUnsComponent,
+    ProgressBarComponent,
+    ChooseMembershipComponent,
+    AddressFormComponent,
+    PaymentFormComponent,
+    ConfirmationComponent
   ],
   imports: [
     BrowserModule,

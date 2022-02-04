@@ -4,10 +4,20 @@ import { HomeComponent} from "./home/home.component";
 import { MitgliedschaftComponent } from "./mitgliedschaft/mitgliedschaft.component";
 import { ProjectDetailComponent } from "./project-detail/project-detail.component";
 import {UeberUnsComponent} from "./ueber-uns/ueber-uns.component";
+import {ChooseMembershipComponent} from "./choose-membership/choose-membership.component";
+import {AddressFormComponent} from "./address-form/address-form.component";
+import {PaymentFormComponent} from "./payment-form/payment-form.component";
+import {ConfirmationComponent} from "./confirmation/confirmation.component";
 
 const routes: Routes = [
   { path:'', component: HomeComponent},
-  { path: 'unterstützen', component: MitgliedschaftComponent},
+  { path: 'mitgliedschaft', component: MitgliedschaftComponent,
+  children: [
+    { path: 'mitgliedschaft', component: ChooseMembershipComponent},
+    { path: 'adresse', component: AddressFormComponent},
+    { path: 'bezahlung', component: PaymentFormComponent},
+    { path: 'bestätigung', component: ConfirmationComponent}
+  ]},
   { path: 'project/:name', component: ProjectDetailComponent},
   { path: 'über-uns', component: UeberUnsComponent}
 ];

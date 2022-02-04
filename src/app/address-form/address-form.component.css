@@ -1,0 +1,25 @@
+form {
+  width: 100%;
+  margin: auto auto 30px;
+}
+fieldset {
+  margin-top: 10px;
+}
+.newsletter {
+  margin-top: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .Wrapper {
+    width: 95%!important;
+    padding: 1rem!important;
+  }
+}
+.illustration {
+  width: 135px;
+  display: block;
+  margin: 5px auto 20px;
+}
+.description {
+  display: block;
+  text-align: justify;
+}

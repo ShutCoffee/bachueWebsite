@@ -5,109 +5,14 @@
   text-align: justify;
   transition: all 0.3s;
 }
-form {
-  width: 100%;
-  margin: auto auto 30px;
-}
-fieldset {
-  margin-top: 10px;
-}
-.newsletter {
-  margin-top: 10px;
-}
-@media only screen and (max-width: 600px) {
-  .Wrapper {
-    width: 95%!important;
-    padding: 1rem!important;
-  }
-}
-.illustration {
-  width: 135px;
-  display: block;
-  margin: 5px auto 20px;
-}
-.description {
-  display: block;
-  text-align: justify;
+
+#zurück {
+  margin-left: 100px;
 }
 
-/* mitgliedschafts optionen */
-
-
-.banner {
-  width: 100%;
+#weiter {
+  float: right;
+  margin-right: 100px;
 }
 
-#pricing {
-  margin-bottom: 20px;
-}
-
-.pricing-content{}
-.single-pricing{
-  background:whitesmoke;
-  padding:40px 20px;
-  border-radius:5px;
-  position:relative;
-  z-index:2;
-  border:1px solid #eee;
-  box-shadow: 0 10px 40px -10px rgba(0,64,128,.09);
-  transition:0.3s;
-  height: 650px;
-}
-@media only screen and (max-width:600px) {
-  .single-pricing {margin-bottom:30px;}
-  .single-pricing {height: fit-content;}
-}
-.single-pricing:hover{
-  box-shadow:0px 60px 60px rgba(0,0,0,0.1);
-  z-index:100;
-  transform: translate(0, -10px);
-}
-.price-head h2 {
-  font-weight: 600;
-  margin-bottom: 0px;
-  text-transform: capitalize;
-  font-size: 26px;
-}
-.price {
-  font-weight: 500;
-  font-size: 50px;
-  margin-bottom: 0px;
-}
-.single-pricing{}
-.single-pricing h5 {
-  font-size: 14px;
-  margin-bottom: 0px;
-  text-transform: uppercase;
-}
-.single-pricing ul{
-  list-style: none;
-  margin-bottom: 20px;
-  margin-top: 30px;
-  margin-left: -30px;
-}
-
-.single-pricing ul li{line-height: 35px;}
-.single-pricing a {
-  background:none;
-  border: 2px solid #2CCB44;
-  border-radius: 5000px;
-  color: #2CCB44;
-  display: inline-block;
-  font-size: 16px;
-  overflow: hidden;
-  padding:10px 45px;
-  text-transform: capitalize;
-  transition: all 0.3s ease 0s;
-}
-.single-pricing a:hover, .single-pricing a:focus{
-  background:#2CCB44;
-  color:#fff;
-  border: 2px solid #2CCB44;
-}
-
-.membershipPicture {
-  width: 70%;
-  padding: 15px;
-}
 
