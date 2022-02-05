@@ -1,3 +1,7 @@
+.Wrapper {
+  height: 650px;
+}
+
 .banner {
   width: 100%;
 }
@@ -16,16 +20,25 @@
   border:1px solid #eee;
   box-shadow: 0 10px 40px -10px rgba(0,64,128,.09);
   transition:0.3s;
-  height: 650px;
+  height: 600px;
 }
 @media only screen and (max-width:600px) {
   .single-pricing {margin-bottom:30px;}
   .single-pricing {height: fit-content;}
+  .Wrapper {
+    height: fit-content;
+  }
+  .activeMembership {
+    transform: none!important;
+    box-shadow: none!important;
+    z-index:0!important;
+  }
 }
 .single-pricing:hover{
   box-shadow:0px 60px 60px rgba(0,0,0,0.1);
   z-index:100;
   transform: translate(0, -10px);
+  cursor: pointer;
 }
 .price-head h2 {
   font-weight: 600;
@@ -73,4 +86,11 @@
 .membershipPicture {
   width: 70%;
   padding: 15px;
+}
+
+.activeMembership {
+  border: solid #2CCB44 4px;
+  box-shadow:0px 60px 60px rgba(0,0,0,0.1);
+  z-index:100;
+  transform: translate(0, -10px);
 }

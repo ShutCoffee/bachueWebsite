@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Mitgliedschaft} from "../models/mitgliedschaft.model";
 import {Router} from "@angular/router";
+import {MembershipService} from "../services/membership.service";
 
 @Component({
   selector: 'app-mitgliedschaft',
@@ -9,14 +10,14 @@ import {Router} from "@angular/router";
 })
 export class MitgliedschaftComponent implements OnInit {
 
-  public mitgliedschaft: Mitgliedschaft =  new Mitgliedschaft("active", 0);
   public alert = "";
   validation: string = "";
   currentStep: string | undefined = "";
   nextButton: string = "";
   backButton: string = "";
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,
+              private membershipService: MembershipService) { }
 
   ngOnInit(): void {
     this.currentStep = this.router.url.split('/').pop();
