@@ -9,11 +9,12 @@ body {
   margin: 0;
   font-family: Roboto,
   "Helvetica Neue", sans-serif;
+
 }
 p {
   line-height: 1.5;
   font-family: Roboto;
-  font-size: 17px;
+  font-size: 20px;
 }
 .btn {
   background-color: #2CCB44!important;
@@ -28,11 +29,20 @@ p {
 .dropCap p:first-child::first-letter{
   color:#2CCB44;
   font-weight: bold;
-  font-size: 70px;
+  font-size: 90px;
   float: left;
-  line-height: 70px;
+  line-height: 90px;
   padding-right: 8px;
   margin-top: -3px;
+}
+@media only screen and (max-width:600px) {
+  p {
+    font-size: 18px;
+  }
+  .dropCap p:first-child::first-letter {
+    font-size: 80px;
+    line-height: 80px;
+  }
 }
 
 

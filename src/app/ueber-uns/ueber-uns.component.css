@@ -1,0 +1,27 @@
+.Wrapper {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 2rem;
+  text-align: justify;
+  transition: all 0.3s;
+}
+@media only screen and (max-width: 600px) {
+  .Wrapper {
+    width: 95% !important;
+    padding: 1rem !important;
+  }
+}
+
+.images p {
+  font-size: 15px;
+}
+
+
+.images {
+  width: fit-content;
+  margin: auto;
+}
+.images img {
+  padding: 15px;
+  border-radius: 50%;
+}
