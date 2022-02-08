@@ -23,6 +23,7 @@ import { AddressFormComponent } from './address-form/address-form.component';
 import { PaymentFormComponent } from './payment-form/payment-form.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import {MatTabsModule} from "@angular/material/tabs";
+import { SpendenComponent } from './spenden/spenden.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import {MatTabsModule} from "@angular/material/tabs";
     ChooseMembershipComponent,
     AddressFormComponent,
     PaymentFormComponent,
-    ConfirmationComponent
+    ConfirmationComponent,
+    SpendenComponent
   ],
   imports: [
     BrowserModule,

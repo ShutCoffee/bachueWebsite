@@ -1,0 +1,41 @@
+.Wrapper {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 2rem;
+  text-align: justify;
+  transition: all 0.3s;
+}
+@media only screen and (max-width: 600px) {
+  .Wrapper {
+    width: 95% !important;
+    padding: 1rem !important;
+  }
+}
+.col h1 {
+  display: inline;
+}
+.col {
+  padding: 15px;
+}
+.col:hover, .input:hover {
+  color: #2CCB44;
+  cursor: pointer;
+}
+.prices {
+  width: 300px;
+}
+.col-md {
+  background-color: whitesmoke;
+}
+input {
+  padding: 5px;
+  font-size: 32px;
+  text-align: right;
+}
+.input-group-text {
+  background-color: white;
+  border-left: none;
+}
+.input-group {
+  margin-top: 15px;
+}

@@ -8,6 +8,7 @@ import {ChooseMembershipComponent} from "./choose-membership/choose-membership.c
 import {AddressFormComponent} from "./address-form/address-form.component";
 import {PaymentFormComponent} from "./payment-form/payment-form.component";
 import {ConfirmationComponent} from "./confirmation/confirmation.component";
+import {SpendenComponent} from "./spenden/spenden.component";
 
 const routes: Routes = [
   { path:'', component: HomeComponent},
@@ -19,7 +20,8 @@ const routes: Routes = [
     { path: 'bestaetigung', component: ConfirmationComponent}
   ]},
   { path: 'project/:name', component: ProjectDetailComponent},
-  { path: 'über-uns', component: UeberUnsComponent}
+  { path: 'über-uns', component: UeberUnsComponent},
+  { path: 'spenden', component: SpendenComponent}
 ];
 
 @NgModule({

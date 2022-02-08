@@ -14,7 +14,7 @@ body {
 p {
   line-height: 1.5;
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 18px;
 }
 .btn {
   background-color: #2CCB44!important;
@@ -29,9 +29,9 @@ p {
 .dropCap p:first-child::first-letter{
   color:#2CCB44;
   font-weight: bold;
-  font-size: 90px;
+  font-size: 80px;
   float: left;
-  line-height: 90px;
+  line-height: 80px;
   padding-right: 8px;
   margin-top: -3px;
 }
