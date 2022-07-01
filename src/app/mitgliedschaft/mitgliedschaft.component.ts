@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Mitgliedschaft} from "../models/mitgliedschaft.model";
-import {Router} from "@angular/router";
+import {Router, RouterLink} from "@angular/router";
 import {MembershipService} from "../services/membership.service";
 
 @Component({

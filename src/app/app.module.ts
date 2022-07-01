@@ -42,7 +42,7 @@ import { SpendenComponent } from './spenden/spenden.component';
     AddressFormComponent,
     PaymentFormComponent,
     ConfirmationComponent,
-    SpendenComponent
+    SpendenComponent,
   ],
   imports: [
     BrowserModule,
