@@ -9,6 +9,7 @@ import {AddressFormComponent} from "./address-form/address-form.component";
 import {PaymentFormComponent} from "./payment-form/payment-form.component";
 import {ConfirmationComponent} from "./confirmation/confirmation.component";
 import {SpendenComponent} from "./spenden/spenden.component";
+import {NewsComponent} from "./news/news.component";
 
 const routes: Routes = [
   { path:'', component: HomeComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   ]},
   { path: 'project/:name', component: ProjectDetailComponent},
   { path: 'über-uns', component: UeberUnsComponent},
-  { path: 'spenden', component: SpendenComponent}
+  { path: 'spenden', component: SpendenComponent},
+  { path: 'news', component: NewsComponent}
 ];
 
 @NgModule({

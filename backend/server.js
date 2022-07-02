@@ -1,9 +1,16 @@
-//server.js
-var express = require('express');
-var app = express();
-app.get('/', function(req, res) {
-  res.send('Hello World');
-})
-var server = app.listen(8080, function() {
-  console.log("Backend Application listening at http://localhost:8080")
-})
+const mailchimp = require("@mailchimp/mailchimp_marketing");
+
+mailchimp.setConfig({
+  apiKey: "203f1b98512a211a69ec0bf9adcfb8ed-us18",
+  server: "us18",
+});
+
+const run = async () => {
+  const response = await mailchimp.lists.addListMember("9824fe4d65", {
+    email_address: "hnncs@gmail.com",
+    status: "subscribed"
+  })
+  console.log(response);
+};
+
+run();

@@ -1,0 +1,14 @@
+.Wrapper {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 2rem;
+}
+.title {
+  text-align: center;
+}
+@media only screen and (max-width: 1000px) {
+  .Wrapper {
+    width: 95% !important;
+    padding: 0rem!important;
+  }
+}

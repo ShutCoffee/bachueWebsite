@@ -24,6 +24,8 @@ import { PaymentFormComponent } from './payment-form/payment-form.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import {MatTabsModule} from "@angular/material/tabs";
 import { SpendenComponent } from './spenden/spenden.component';
+import { NewsPreviewComponent } from './news-preview/news-preview.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { SpendenComponent } from './spenden/spenden.component';
     PaymentFormComponent,
     ConfirmationComponent,
     SpendenComponent,
+    NewsPreviewComponent,
+    NewsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,38 @@
+img {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+}
+.datum {
+  text-decoration-line: underline;
+}
+h5, .datum {
+  color: grey;
+}
+@media screen and (max-width: 1000px) {
+  .col-6 {
+    width: 100% !important;
+  }
+  img {
+    height: auto;
+    max-height: 400px;
+    margin-bottom: 15px;
+  }
+}
+.Wrapper {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: whitesmoke;
+  margin: 10px;
+}
+p {
+  text-align: justify;
+}
+.description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 7; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
